@@ -50,12 +50,12 @@ async def ultroid(event):
         get_string("ast_3").format(name),
         buttons=[
             [
-                Button.inline("Language 🌐", data="lang"),
-                Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
+                Button.inline("ʅαɳɠυαɠҽ 🌐", data="lang"),
+                Button.inline("ʂҽƚƚιɳɠʂ ⚙️", data="setter"),
             ],
             [
-                Button.inline("Sᴛᴀᴛs ✨", data="stat"),
-                Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ 📻", data="bcast"),
+                Button.inline("ʂƚαƚʂ ✨", data="stat"),
+                Button.inline("Ⴆɾσαԃƈαʂƚ 📻", data="bcast"),
             ],
         ],
     )
@@ -71,12 +71,12 @@ async def ultroid(event):
         get_string("ast_3").format(OWNER_NAME),
         buttons=[
             [
-                Button.inline("Language 🌐", data="lang"),
-                Button.inline("Sᴇᴛᴛɪɴɢs ⚙️", data="setter"),
+                Button.inline("ʅαɳɠυαɠҽ 🌐", data="lang"),
+                Button.inline("ʂҽƚƚιɳɠʂ ⚙️", data="setter"),
             ],
             [
-                Button.inline("Sᴛᴀᴛs ✨", data="stat"),
-                Button.inline("Bʀᴏᴀᴅᴄᴀsᴛ 📻", data="bcast"),
+                Button.inline("ʂƚαƚʂ ✨", data="stat"),
+                Button.inline("Ⴆɾσαԃƈαʂƚ 📻", data="bcast"),
             ],
         ],
     )
@@ -86,7 +86,7 @@ async def ultroid(event):
 @owner
 async def botstat(event):
     ok = len(get_all_users())
-    msg = """Ultroid Assistant - Stats
+    msg = """ ყσƙσԋαɱα αʂʂιʂƚαɳƚ - ʂƚαƚʂ"""
 Total Users - {}""".format(
         ok
     )
@@ -110,7 +110,7 @@ async def bdcast(event):
         else:
             success = 0
             fail = 0
-            await conv.send_message(f"Starting a broadcast to {len(ok)} users...")
+            await conv.send_message(f"Started a broadcast to {len(ok)} users...")
             start = datetime.now()
             for i in ok:
                 try:
@@ -135,12 +135,12 @@ async def setting(event):
     await event.edit(
         "Choose from the below options -",
         buttons=[
-            [Button.inline("API Kᴇʏs", data="apiset")],
+            [Button.inline("αρι ƙҽყʂ", data="apiset")],
             [
-                Button.inline("Aʟɪᴠᴇ", data="alvcstm"),
-                Button.inline("PᴍPᴇʀᴍɪᴛ", data="ppmset"),
+                Button.inline("αʅιʋҽ", data="alvcstm"),
+                Button.inline("ρɱρҽɾɱιƚ", data="ppmset"),
             ],
-            [Button.inline("Fᴇᴀᴛᴜʀᴇs", data="otvars")],
-            [Button.inline("« Bᴀᴄᴋ", data="mainmenu")],
+            [Button.inline("ϝҽαƚυɾҽʂ", data="otvars")],
+            [Button.inline("« Ⴆαƈƙ", data="mainmenu")],
         ],
     )
