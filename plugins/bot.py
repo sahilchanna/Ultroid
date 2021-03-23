@@ -62,33 +62,6 @@ except BaseException:
 
 
 @ultroid_cmd(
-    pattern="alive$",
-)
-async def lol(ult):
-    pic = udB.get("ALIVE_PIC")
-    uptime = grt((time.time() - start_time))
-    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey,  I am online."
-    als = (get_string("alive_1")).format(
-        header,
-        OWNER_NAME,
-        ultroid_version,
-        uptime,
-        pyver(),
-        __version__,
-        Repo().active_branch,
-    )
-    if pic is None:
-        await ult.edit(als)
-    elif pic is not None and "telegra" in pic:
-        await ult.delete()
-        await ult.reply(als, file=pic)
-    else:
-        await ult.delete()
-        await ultroid_bot.send_message(ult.chat_id, file=pic)
-        await ultroid_bot.send_message(ult.chat_id, als)
-
-
-@ultroid_cmd(
     pattern="ping$",
 )
 async def _(event):
