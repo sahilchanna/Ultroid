@@ -99,7 +99,7 @@ async def _(event):
     end = dt.now()
     ms = (end - start).microseconds / 1000
     uptime = grt((time.time() - start_time))
-    await x.edit(get_string("🔥🔥ping🔥🔥").format(ms,uptime))
+    await x.edit(get_string("ping").format(ms,uptime))
 
 
 @ultroid_cmd(
