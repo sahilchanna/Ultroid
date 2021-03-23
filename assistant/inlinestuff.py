@@ -80,13 +80,13 @@ async def _(e):
 async def repo(e):
     res = [
         await e.builder.article(
-            title="Ultroid Userbot",
-            description="Userbot | Telethon",
+            title="ყσƙσԋαɱα υʂҽɾႦσƚ",
+            description="Userbot",
             thumb=wb(ultpic, 0, "image/jpeg", []),
-            text="• **ULTROID USERBOT** •",
+            text="• **ყσƙσԋαɱα υʂҽɾႦσƚ** •",
             buttons=[
-                [Button.url("Repo", url="https://github.com/TeamUltroid/Ultroid")],
-                [Button.url("Support", url="t.me/UltroidSupport")],
+                [Button.url("Repo", url="")],
+                [Button.url("Support", url="")],
             ],
         )
     ]
