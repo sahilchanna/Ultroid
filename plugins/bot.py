@@ -70,10 +70,10 @@ async def lol(ult):
     header = udB.get("ALIVE_TEXT")
     als = """
 **The ყσƙσԋαɱα Ⴆσƚ...**\n\n
-**"Hey master ❤️ , I am online. \n\n "**
+**Hey master ❤️ , I am online. \n\n **
 **{} **
 ┏━━━━━━━━━━━━━━━━━━━━
-┣ **Owner** - `{}`
+┣ **🛡️Owner🛡️** - `{}`
 ┣ **Version** - `{}`
 ┣ **UpTime** - `{}`
 ┣ **Python** - `{}`
