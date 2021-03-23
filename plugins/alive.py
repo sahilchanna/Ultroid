@@ -85,12 +85,11 @@ async def reply_id(event):
         reply_to_id = event.reply_to_msg_id
     return reply_to_id
 
-@borg.on(lightning_cmd(outgoing=True, pattern="salive"))
-@borg.on(sudo_cmd(pattern=r"salive", allow_sudo=True))
+@ultroid_cmd(outgoing=True, pattern="salive"))
 async def amireallyalive(salive):
     """ For .alive command, check if the bot is running.  """
     if ALIVE_PHOTTO:
-        pm_caption = "**вℓα¢к ℓιgнтηιηg 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴**\n"
+        pm_caption = "** ყσƙσԋαɱα 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴**\n"
         pm_caption += f"**𝕄𝕪 𝔹𝕠𝕤𝕤**            : {DEFAULTUSER}\n"
         pm_caption += "𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽        : 1.17.5\n"
         pm_caption += "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.9.0\n"
@@ -105,7 +104,6 @@ async def amireallyalive(salive):
         pm_caption += "[┏┓━┏┓━━━━┏┓━┏┓━━━━━\n ┃┃━┃┃━━━━┃┃━┃┃━━━━━\n ┃┗━┛┃┏━━┓┃┃━┃┃━┏━━┓\n ┃┏━┓┃┃┏┓┃┃┃━┃┃━┃┏┓┃ \n ┃┃━┃┃┃┃━┫┃┗┓┃┗┓┃┗┛┃ \n ┗┛━┗┛┗━━┛┗━┛┗━┛┗━━┛](https://t.me/blacklightningot)"
         await salive.get_chat()
         await salive.delete()
-        """ For .allive command, check if the bot is running.  """
         await borg.send_file(
             salive.chat_id, ALIVE_PHOTTO, caption=pm_caption, link_preview=False
         )
@@ -123,7 +121,7 @@ async def amireallyalive(salive):
         await borg.send_file(salive.chat_id, file=sticker)
         await borg.send_message(
             salive.chat_id,
-            "**вℓα¢к ℓιgнтηιηg 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴**\n"
+            "**ყσƙσԋαɱα 𝙸𝚂 🅾︎🅽🅻🅸🅽🅴**\n"
             f"**𝕄𝕪 𝔹𝕠𝕤𝕤**            : {DEFAULTUSER}\n"
             "𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽        : 1.17.5\n"
             "𝙿𝚈𝚃𝙷𝙾𝙽 𝚅𝙴𝚁𝚂𝙸𝙾𝙽          : 3.9.0\n"
@@ -151,23 +149,23 @@ else:
 kraken = bot.uid
 
 
-pm_caption = "__**🔥🔥ɮʟǟƈӄ ʟɨɢɦȶռɨռɢ ɨs օռʟɨռɛ🔥🔥**__\n\n"
+pm_caption = "__**🔥🔥 ყσƙσԋαɱα ɨs օռʟɨռɛ🔥🔥**__\n\n"
 
 pm_caption += (
-    f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**『[{DEFAULTUSER}](tg://user?id={kraken})』**\n\n"
+    f"               __↼🄼🄰🅂🅃🄴🅁⇀__\n**『[{DEFAULTUSER}](tg://user?id={})』**\n\n"
 )
 
 pm_caption += "🛡️TELETHON🛡️ : `1.15.0` \n"
 
-pm_caption += f"😈ɮʟǟƈӄ ʟɨɢɦȶռɨռɢ😈       : __**{hellversion}**__\n"
+pm_caption += f"😈ყσƙσԋαɱα😈       : __**{hellversion}**__\n"
 
 pm_caption += f"⚜️Sudo⚜️            : `{sudou}`\n"
 
-pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/lightningsupport)\n"
+pm_caption += "⚠️CHANNEL⚠️   : [ᴊᴏɪɴ](https://t.me/sahil_channaa)\n"
 
-pm_caption += "🔥CREATOR🔥    : [Nub Here](https://t.me/krish1303y)\n\n"
+pm_caption += "🔥CREATOR🔥    : [none Here]()\n\n"
 
-pm_caption += "    [✨REPO✨](https://github.com/KeinShin/Black-Lightningt) 🔹 [📜License📜](https://github.com/KeinShin/Black-Lightning/blob/master/LICENSE)"
+pm_caption += "    [✨REPO✨]() 🔹 [📜License📜]()"
 
 
 @borg.on(lightning_cmd(outgoing=True, pattern="halive$"))
@@ -184,8 +182,7 @@ async def amireallyalive(halive):
 # Credits To catbot And Sandi
 
 
-@borg.on(lightning_cmd(outgoing=True, pattern="calive$"))
-@borg.on(sudo_cmd(pattern="calive$", allow_sudo=True))
+@ultroid_cmd(outgoing=True, pattern="calive$"))
 async def amireallyalive(calive):
     if calive.fwd_from:
         return
@@ -193,13 +190,13 @@ async def amireallyalive(calive):
     uptime = await get_readable_time((time.time() - StartTime))
     _, check_sgnirts = check_data_base_heal_th()
     if PM_IMG:
-        pm_caption = f"**{ALIVE_MSG}**\n\n"
-        pm_caption += f"**{EMOJI} Database :** `{check_sgnirts}`\n"
-        pm_caption += f"**{EMOJI} Telethon version :** `{version}\n`"
-        pm_caption += f"**{EMOJI} Lightning Userbot Version :** `{catversion}`\n"
-        pm_caption += f"**{EMOJI} Python Version :** `{python_version()}\n`"
-        pm_caption += f"**{EMOJI} Uptime :** `{uptime}\n`"
-        pm_caption += f"**{EMOJI} Master:** {DEFAULTUSER}\n"
+        pm_caption = "**kaise ho bhai sab **\n\n"
+        pm_caption += f"**⚔️ Database :** `{check_sgnirts}`\n"
+        pm_caption += f"**⚔️ Telethon version :** `{version}\n`"
+        pm_caption += f"**⚔️ ყσƙσԋαɱα  bot Version :** `{catversion}`\n"
+        pm_caption += f"**⚔️ Python Version :** `{python_version()}\n`"
+        pm_caption += f"**⚔️ Uptime :** `{uptime}\n`"
+        pm_caption += f"**⚔️ Master:** {DEFAULTUSER}\n"
         await calive.client.send_file(
             calive.chat_id, CAT_IMG, caption=pm_caption, reply_to=reply_to_id
         )
@@ -207,13 +204,13 @@ async def amireallyalive(calive):
     else:
         await edit_or_reply(
             calive,
-            f"**{ALIVE_MSG}**\n\n"
-            f"**{EMOJI} Database :** `{check_sgnirts}`\n"
-            f"**{EMOJI} Telethon Version :** `{version}\n`"
-            f"**{EMOJI} Lightning Userbot Version :** `{catversion}`\n"
-            f"**{EMOJI} Python Version :** `{python_version()}\n`"
-            f"**{EMOJI} Uptime :** `{uptime}\n`"
-            f"**{EMOJI} Master:** {DEFAULTUSER}\n",
+            "**kaise ho bhai sab**\n\n"
+            f"**⚔️ Database :** `{check_sgnirts}`\n"
+            f"**⚔️ Telethon Version :** `{version}\n`"
+            f"**⚔ყσƙσԋαɱα bot Version :** `{catversion}`\n"
+            f"**⚔️Python Version :** `{python_version()}\n`"
+            f"**⚔️Uptime :** `{uptime}\n`"
+            f"**⚔️ Master:** {DEFAULTUSER}\n",
         )
 
 
