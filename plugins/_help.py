@@ -15,7 +15,7 @@ from . import *
 
 
 @ultroid_cmd(
-    pattern="help (.*)",
+    pattern="help ?(.*)",
 )
 async def ult(ult):
     plug = ult.pattern_match.group(1)
