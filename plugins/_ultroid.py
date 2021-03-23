@@ -12,8 +12,8 @@ from . import *
 
 REPOMSG = (
     "• **USERBOT** •\n\n",
-    "• Repo - [Click Here](https://github.com/TeamUltroid/Ultroid)\n",
-    "• Support - @UltroidSupport",
+    "• Repo - [Click Here](https://github.com/sahilchanna/Ultroid)\n",
+    "• Support - no support contact -  @HELLB0II or @HackingTush",
 )
 
 
