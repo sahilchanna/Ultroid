@@ -32,7 +32,7 @@ async def assistant(event):
         if event.is_private and event.sender_id in sed:
             return
         await event.reply(
-            f"Hey there, this is Ultroid Assistant of {OWNER_NAME}!\n\n{ok}",
+            f"Hey there, this is ყσƙσԋαɱα Assistant of {OWNER_NAME}!\n\n{ok}",
             buttons=[Button.url("Know More", url="https://t.me/TeamUltroid")],
         )
 
@@ -86,7 +86,7 @@ async def ultroid(event):
 @owner
 async def botstat(event):
     ok = len(get_all_users())
-    msg = """ ყσƙσԋαɱα αʂʂιʂƚαɳƚ - ʂƚαƚʂ"""
+    msg = """ ყσƙσԋαɱα αʂʂιʂƚαɳƚ - ʂƚαƚʂ
 Total Users - {}""".format(
         ok
     )
@@ -133,7 +133,7 @@ Failed for {fail} user(s)."""
 @owner
 async def setting(event):
     await event.edit(
-        "Choose from the below options -",
+        "ƈԋσσʂҽ ϝɾσɱ ƚԋҽ Ⴆҽʅσɯ σρƚισɳʂ -",
         buttons=[
             [Button.inline("αρι ƙҽყʂ", data="apiset")],
             [
