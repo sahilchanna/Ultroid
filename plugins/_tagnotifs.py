@@ -28,10 +28,10 @@ async def all_messages_catcher(e):
         yy = f"[{get_display_name(y)}](https://t.me/c/{y.id})"
         msg = f"https://t.me/c/{y.id}/{e.id}"
         if e.text:
-            cap = f"{xx} tagged you in {yy}\n\n```{e.text}```\nㅤ"
+            cap = f"{xx} you were tagged in {yy}\n\n```{e.text}```\nㅤ"
         else:
-            cap = f"{xx} tagged you in {yy}"
-        btx = "📨 View Message"
+            cap = f"{xx} you were tagged in{yy}"
+        btx ="go to msg"
         try:
             await asst.send_message(
                 NEEDTOLOG,
