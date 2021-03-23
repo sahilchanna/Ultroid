@@ -67,10 +67,11 @@ except BaseException:
 async def lol(ult):
     pic = udB.get("ALIVE_PIC")
     uptime = grt((time.time() - start_time))
-    header = udB.get("ALIVE_TEXT")  "Hey master ❤️ , I am online."
+    header = udB.get("ALIVE_TEXT")
     als = """
 **The ყσƙσԋαɱα Ⴆσƚ...**\n\n
-**{}**
+**"Hey master ❤️ , I am online. \n\n "**
+**{} **
 ┏━━━━━━━━━━━━━━━━━━━━
 ┣ **Owner** - `{}`
 ┣ **Version** - `{}`
