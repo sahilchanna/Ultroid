@@ -67,7 +67,7 @@ except BaseException:
 async def lol(ult):
     pic = udB.get("ALIVE_PIC")
     uptime = grt((time.time() - start_time))
-    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey,  I am alive."
+    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey,  I am online."
     als = (get_string("alive_1")).format(
         header,
         OWNER_NAME,
@@ -93,13 +93,13 @@ async def lol(ult):
 )
 async def _(event):
     start = dt.now()
-    x = await eor(event, "`Pong !`")
+    x = await eor(event, "`🔥🔥Pong !🔥🔥`")
     if event.fwd_from:
         return
     end = dt.now()
     ms = (end - start).microseconds / 1000
     uptime = grt((time.time() - start_time))
-    await x.edit(get_string("ping").format(ms, uptime))
+    await x.edit(get_string("ping").format(🔥ms, uptime🔥))
 
 
 @ultroid_cmd(
