@@ -16,8 +16,8 @@ async def apiset(event):
     await event.edit(
         get_string("ast_1"),
         buttons=[
-            [Button.inline("Remove.bg", data="rmbg")],
-            [custom.Button.inline("« Back", data="setter")],
+            [Button.inline("ɾҽɱσʋҽ.Ⴆɠ", data="rmbg")],
+            [custom.Button.inline("«Ⴆαƈƙ", data="setter")],
         ],
     )
 
@@ -38,7 +38,7 @@ async def rmbgapi(event):
         response = await response
         themssg = response.message.message
         if themssg == "/cancel":
-            return await conv.send_message("Cancelled!!")
+            return await conv.send_message("ƈαɳƈҽʅʅҽԃ!!")
         else:
             await setit(event, var, themssg)
-            await conv.send_message("{} changed to {}".format(name, themssg))
+            await conv.send_message("{} ƈԋαɳɠҽԃ ƚσ {}".format(name, themssg))
