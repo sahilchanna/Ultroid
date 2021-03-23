@@ -69,16 +69,16 @@ async def lol(ult):
     uptime = grt((time.time() - start_time))
     header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey master ❤️ , I am online."
     als = """
-**The ყσƙσԋαɱα Ⴆσƚ...**
+**The ყσƙσԋαɱα Ⴆσƚ...**\n\n
 **{}**
-┏━━━━━━━━━━━
+┏━━━━━━━━━━━━━━━━━━━━━
 ┣ **Owner** - `{}`
 ┣ **Version** - `{}`
 ┣ **UpTime** - `{}`
 ┣ **Python** - `{}`
 ┣ **Telethon** - `{}`
 ┣ **Branch** - `{}`
-┗━━━━━━━━━━
+┗━━━━━━━━━━━━━━━━━━━━
 """.format(
         header,
         OWNER_NAME,
