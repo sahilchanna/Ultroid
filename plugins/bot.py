@@ -62,18 +62,55 @@ except BaseException:
 
 
 @ultroid_cmd(
+    pattern="alive$",
+)
+async def lol(ult):
+    pic = udB.get("ALIVE_PIC")
+    uptime = grt((time.time() - start_time))
+    header = udB.get("ALIVE_TEXT") if udB.get("ALIVE_TEXT") else "Hey master ❤️ , I am online."
+    als = """
+**The ყσƙσԋαɱα Ⴆσƚ...**
+**{}**
+┏━━━━━━━━━━━
+┣ **Owner** - `{}`
+┣ **Version** - `{}`
+┣ **UpTime** - `{}`
+┣ **Python** - `{}`
+┣ **Telethon** - `{}`
+┣ **Branch** - `{}`
+┗━━━━━━━━━━
+""".format(
+        header,
+        OWNER_NAME,
+        ultroid_version,
+        uptime,
+        pyver(),
+        __version__,
+        Repo().active_branch,
+    )
+    if pic is None:
+        await ult.edit(als)
+    elif pic is not None and "telegra" in pic:
+        await ult.delete()
+        await ult.reply(als, file=pic)
+    else:
+        await ult.delete()
+        await ultroid_bot.send_message(ult.chat_id, file=pic)
+        await ultroid_bot.send_message(ult.chat_id, als)
+
+
+@ultroid_cmd(
     pattern="ping$",
 )
 async def _(event):
     start = dt.now()
-    x = await eor(event, "`🔥🔥Pong !🔥🔥`")
+    x = await eor(event, "`🔥🔥Pong!🔥🔥`")
     if event.fwd_from:
         return
     end = dt.now()
     ms = (end - start).microseconds / 1000
     uptime = grt((time.time() - start_time))
-    await x.edit(get_string("ping").format(ms,uptime))
-
+    await x.edit(f"**🔥🔥Pong!!🔥🔥** `{ms}ms`\n**🔥🔥Uptime🔥🔥** - `{uptime}`")
 
 @ultroid_cmd(
     pattern="cmds$",
