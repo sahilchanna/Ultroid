@@ -12,7 +12,13 @@
     Check if your bot is working.
 
 • `{i}ping`
-    Check Ultroid's response time.
+    Check Yokohama's response time.
+
+• `{i}tking`
+    Check bot's response time in a new style. 
+
+•'{i}uping`
+    Check bot's response time **ultroid ping **
 
 • `{i}cmds`
     View all plugin names.
@@ -101,7 +107,7 @@ async def lol(ult):
 
 
 @ultroid_cmd(
-    pattern="ping$",
+    pattern="uping$",
 )
 async def _(event):
     start = dt.now()
