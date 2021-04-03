@@ -50,7 +50,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"⪼ **➟Ping🖤 speed😅🥲** : `{ms}`\n⪼ **➥Uptime🤙** : `{uptime}`\n⪼**➥✯☫уσкσнαмα вσт☫✯**"
+        f" **➟Ping🖤 speed😅🥲** : `{ms}`\n ⪼ **➥Uptime🤙** : `{uptime}`\n ⪼**➥✯☫уσкσнαмα вσт☫✯**"
 
 @ultroid_cmd(
     pattern="ping$",
