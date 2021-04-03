@@ -106,6 +106,7 @@ async def lol(ult):
         await ultroid_bot.send_message(ult.chat_id, als)
 
 
+
 @ultroid_cmd(
     pattern="uping$",
 )
@@ -118,6 +119,21 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = grt((time.time() - start_time))
     await x.edit(f"**🔥🔥Pong!!🔥🔥** `{ms}ms`\n**🔥🔥Uptime🔥🔥** - `{uptime}`")
+
+
+
+@ultroid_cmd(
+    pattern="ping$",
+)
+async def _(event):
+    start = dt.now()
+    x = await eor(event, "`Pong!`\n ⪻ⓦⒶⒾⓣ⪼ ")
+    if event.fwd_from:
+        return
+    end = dt.now()
+    ms = (end - start).microseconds / 1000
+    uptime = grt((time.time() - start_time))
+    await x.edit(f"**Pong** `{ms}ms`\n**➥Uptime** - `{uptime}`\n**➥✯☫уσкσнαмα вσт☫ ✯**")
 
 @ultroid_cmd(
     pattern="cmds$",
