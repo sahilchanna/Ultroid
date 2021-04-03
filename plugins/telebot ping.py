@@ -4,9 +4,9 @@
 import time
 from datetime import datetime
 
-from telebot import CMD_HELP
-from telebot.__init__ import StartTime
-from telebot.plugins import OWNER_ID, TELE_NAME
+from ultroid import CMD_HELP
+from ultroid.__init__ import StartTime
+from ultroid.plugins import OWNER_ID, ALIVE_NAME
 
 
 def get_readable_time(seconds: int) -> str:
@@ -50,7 +50,7 @@ async def _(event):
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"⪼ **Ping speed** : `{ms}`\n⪼ **Uptime** : `{uptime}`\n⪼ **Owner** : [{TELE_NAME}](tg://user?id={OWNER_ID})"
+        f"⪼ **Ping🖤 speed😅🥲** : `{ms}`\n⪼ **🤦🏻‍♂️Uptime🤙** : `{uptime}`\n⪼ **Owner** : [{TELE_NAME}](tg://user?id={OWNER_ID})"
     )
 
 
