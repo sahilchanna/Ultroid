@@ -40,17 +40,27 @@ def get_readable_time(seconds: int) -> str:
 # @command(pattern="^.ping$")
 
 
-@ultroid_cmd(pattern="tking$"))
+@ultroid_cmd(pattern="tbping$"))
 async def _(event):
     if event.fwd_from:
         return
     start = datetime.now()
-    x = await eor(event, "⛝ Pong! ⛝")
+    x = await eor(event, "ρσиg!")
     end = datetime.now()
     ms = (end - start).microseconds / 1000
     uptime = get_readable_time((time.time() - StartTime))
     await x.edit(
-        f"⪼ **Ping🖤 speed😅🥲** : `{ms}`\n⪼ **🤦🏻‍♂️Uptime🤙** : `{uptime}`\n⪼ **Owner** : [{TELE_NAME}](tg://user?id={OWNER_ID})"
-    )
+        f"⪼ **➟Ping🖤 speed😅🥲** : `{ms}`\n⪼ **➥Uptime🤙** : `{uptime}`\n⪼**➥✯☫уσкσнαмα вσт☫✯**"
 
-
+@ultroid_cmd(
+    pattern="ping$",
+)
+async def _(event):
+    start = dt.now()
+    x = await eor(event, "`Pong!`\n ⪻ⓦⒶⒾⓣ⪼ ")
+    if event.fwd_from:
+        return
+    end = dt.now()
+    ms = (end - start).microseconds / 1000
+    uptime = grt((time.time() - start_time))
+    await x.edit(f"**Pong** `{ms}ms`\n**➥Uptime** - `{uptime}`\n**➥✯☫уσкσнαмα вσт☫ ✯**")
